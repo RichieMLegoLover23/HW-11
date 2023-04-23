@@ -1,0 +1,47 @@
+class Pet:
+    def __init__(self, name, animal_type, age):
+        self.__name = name
+        self.__animal_type = animal_type
+        self.__age = age
+    
+    def set_name(self, name):
+        self.__name = name
+        
+    def set_animal_type(self, animal_type):
+        self.__animal_type = animal_type
+        
+    def set_age(self, age):
+        self.__age = age
+    
+    def get_name(self):
+        return self.__name
+    
+    def get_animal_type(self):
+        return self.__animal_type
+    
+    def get_age(self):
+        return self.__age
+
+
+# Create an object of the Pet class
+my_pet = Pet("", "", 0)
+
+# Prompt the user to enter the name, type, and age of their pet
+name = input("Enter your pet's name: ")
+animal_type = input("Enter the type of animal your pet is: ")
+age = int(input("Enter your pet's age: "))
+
+# Set the pet's attributes using the object's methods
+my_pet.set_name(name)
+my_pet.set_animal_type(animal_type)
+my_pet.set_age(age)
+
+# Get the pet's attributes using the object's methods
+pet_name = my_pet.get_name()
+pet_type = my_pet.get_animal_type()
+pet_age = my_pet.get_age()
+
+# Display the pet's attributes on the screen
+print(f"Your pet's name is {pet_name}.")
+print(f"Your pet is a {pet_type}.")
+print(f"Your pet is {pet_age} years old.")

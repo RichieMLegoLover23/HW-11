@@ -1,0 +1,31 @@
+class Employee:
+    def __init__(self, name, id_number, department, job_title):
+        self.__name = name
+        self.__id_number = id_number
+        self.__department = department
+        self.__job_title = job_title
+    
+    def get_name(self):
+        return self.__name
+    
+    def get_id_number(self):
+        return self.__id_number
+    
+    def get_department(self):
+        return self.__department
+    
+    def get_job_title(self):
+        return self.__job_title
+
+
+# Create three employee objects
+employee1 = Employee("Susan Meyers", 47899, "Accounting", "Vice President")
+employee2 = Employee("Mark Jones", 39119, "IT", "Programmer")
+employee3 = Employee("Joy Rogers", 81774, "Manufacturing", "Engineer")
+
+# Display the data for each employee on the screen
+print("Name\t\tID Number\tDepartment\tJob Title")
+print("---------------------------------------------------")
+print(f"{employee1.get_name()}\t{employee1.get_id_number()}\t\t{employee1.get_department()}\t\t{employee1.get_job_title()}")
+print(f"{employee2.get_name()}\t{employee2.get_id_number()}\t\t{employee2.get_department()}\t\t\t{employee2.get_job_title()}")
+print(f"{employee3.get_name()}\t{employee3.get_id_number()}\t\t{employee3.get_department()}\t{employee3.get_job_title()}")
